@@ -4,7 +4,7 @@ export const registerRoutes = (app: Express) => {
   app.get("/health", (req: Request, res: Response) => {
     res.json({
       status: "ok",
-      timeStamp: new Date().toISOString(),
+      timestamp: new Date().toISOString(),
       uptime: process.uptime(),
     });
   });
